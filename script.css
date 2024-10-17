@@ -1,0 +1,89 @@
+/* Style for the body and general layout */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 10px; /* Ukuran margin lebih kecil agar lebih responsif */
+    padding: 8px;
+    background-image: url('images/n.jpg'); /* Ganti dengan gambar background bunga */
+    background-size: cover;
+    background-position: center; /* Menambahkan agar background di tengah */
+    color: rgb(52, 33, 33);
+    text-align: center;
+}
+
+header {
+    display: flex;
+    justify-content: center; /* Agar logo dan teks di tengah */
+    align-items: center; /* Menyelaraskan logo dan teks secara vertikal */
+    padding: 20px;
+    background-color: rgba(235, 226, 226, 0.565);
+}
+
+.logo-container img {
+    width: 120px; /* Ukuran logo disesuaikan */
+    height: auto;
+    margin-right: 20px; /* Memberikan jarak antara logo dan teks */
+}
+
+h1 {
+    font-size: 28px; /* Ukuran teks judul */
+    margin: 10px 0;
+}
+
+.button-container {
+    margin: 20px;
+}
+
+/* Style untuk tombol layanan (WhatsApp, Instagram) */
+.service-button {
+    display: flex; /* Menggunakan flex agar gambar dan teks sejajar horizontal */
+    justify-content: button; /* Agar teks dan gambar berada di tengah */
+    align-items: center;
+    gap: 10px; /* Jarak antara teks dan logo */
+    margin: 10px auto;
+    padding: 15px;
+    background-color: rgb(169, 160, 160);
+    color: rgb(255, 0, 0);
+    text-decoration: none;
+    border-radius: 10px; /* Membuat sudut tombol melengkung */
+    transition: background-color 0.3s, transform 0.2s; /* Transisi halus */
+    width: 30%;
+    max-width: 400px;
+}
+
+.service-button img {
+    width: 60px; /* Ukuran logo di tombol disesuaikan */
+    height: auto;
+}
+
+.service-button:hover {
+    background-color: lightgreen; /* Warna saat hover */
+}
+
+.service-button:active {
+    transform: scale(0.95); /* Animasi saat tombol ditekan */
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    color: rgb(161, 147, 147);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Responsiveness untuk layar lebih kecil */
+@media (max-width: 765px) {
+    body {
+        margin: 20px;
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 24px; /* Ukuran teks judul untuk layar lebih kecil */
+    }
+
+    .service-button {
+        padding: 10px; /* Sesuaikan padding di tombol */
+    }
+}
